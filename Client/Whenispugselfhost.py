@@ -1,7 +1,7 @@
 import datetime
 import time
 wanted_day = 'saturday'
-wanted_time = 21
+wanted_time = 19
 
 list = [['monday', 0],['tuesday', 1],['wednesday', 2],['thursday', 3],['friday', 4],['saturday', 5],['sunday', 6]]
 
