@@ -19,7 +19,7 @@ if wanted_time > time[3]:
     secs = 59 - time[5]
 
 else:
-    days = days - 1
+    days = days
     hours = 23 - time[3] + wanted_time
     mins = 59 - time[4]
     secs = 59 - time[5]
