@@ -10,18 +10,19 @@ for i in list:
         number_wanted_day = i[1]
 
 today = datetime.datetime.today().weekday()
-days = number_wanted_day 
+days = number_wanted_day
 time = time.localtime(time.time() + time.timezone)
 
 if wanted_time > time[3]:
-    hours = wanted_time - time[3]
+    hours = wanted_time - time[3] - 1
     mins = 59 - time[4]
     secs = 59 - time[5]
 
 else:
     days = days
-    hours = 23 - time[3] + wanted_time
+    hours = 23 - time[3] + wanted_time #- 1 #Not sure if one hour off or not.
     mins = 59 - time[4]
     secs = 59 - time[5]
 
-print( [days, 'day(s)', hours,'hour(s)', mins,'minute(s) and', secs,'seconds untill the Saturday PUG!'])
+print("%d day(s), %d hour(s), %d minute(s) and %d second(s) left untill the next PUG!" % (days, hours, mins, secs))
+input("Press Enter to continue...")
