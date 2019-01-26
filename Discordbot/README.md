@@ -16,6 +16,7 @@ Note: This is built on Python3.6.*
 Linux:  
 Note: This is built on Python3.6.*  
 1. I assume your distro has python3.6 by default, otherwise install it in the terminal or use the site: https://www.python.org/downloads/release/python-368/  
+2. Open the terminal and type: pip3 install discordpy
 3. Go to the discord page and become an app developer - https://discordapp.com/developers/applications/  
 4. Follow the steps and get the API key. - Bot does not require admin rights.  
 5. Edit the bot's <token> part and enter your API key there.  
